@@ -249,7 +249,7 @@ body {
 .step-content p { margin: 0; font-size: 0.95rem; color: var(--text-regular); }
 
 /* ==================================================
-   4. 인터랙티브 컴포넌트 (Before & After 이미지 100% 한눈에 노출)
+   4. 인터랙티브 컴포넌트 (Before & After 이미지 전체 노출 설정)
 ================================================== */
 .example-box {
     background: linear-gradient(145deg, var(--box-bg), #1a1a24);
@@ -278,7 +278,7 @@ body {
     position: relative; 
     width: 100%; 
     max-width: 600px; 
-    height: 400px;
+    height: 420px;
     margin: 25px auto; 
     overflow: hidden; 
     border-radius: 12px;
@@ -290,6 +290,7 @@ body {
     touch-action: pan-y;
 }
 
+/* contain 설정으로 이미지 잘림 방지 및 전체 노출 */
 .slider-img { 
     position: absolute; 
     top: 0; 
@@ -305,12 +306,12 @@ body {
     max-width: none !important;
 }
 
-/* 사용하실 Before & After 이미지 경로를 필요에 맞게 지정하세요 */
+/* 요청해주신 Before & After 이미지 URL 반영 */
 .img-before { 
-    background-image: url('https://picsum.photos/id/1025/600/400'); 
+    background-image: url('https://rawcdn.githack.com/ADplanters/public/636af685a6d14d8a101a67aa27c51081bc6bf693/B&A%EC%9D%B4%EB%AF%B8%EC%A7%80_before.jpg?raw=true'); 
 }
 .img-after { 
-    background-image: url('https://picsum.photos/id/1062/600/400'); 
+    background-image: url('https://rawcdn.githack.com/ADplanters/public/636af685a6d14d8a101a67aa27c51081bc6bf693/B&A%EC%9D%B4%EB%AF%B8%EC%A7%80_after.jpg?raw=true'); 
 }
 
 .img-label {
